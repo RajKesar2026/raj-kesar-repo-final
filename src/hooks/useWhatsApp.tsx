@@ -1,6 +1,6 @@
 import { createContext, useContext, ReactNode } from "react";
 
-const DEFAULT_NUMBER = "917337471489";
+const DEFAULT_NUMBER = "918247791826";
 const DEFAULT_MESSAGE = "Hi, I want to order Kesar mangoes. Please share details.";
 
 interface WhatsAppContextType {
