@@ -1,13 +1,21 @@
 import heroImg from "@/assets/hero-mangoes.jpg";
-import { useWhatsApp } from "@/hooks/useWhatsApp";
-import WhatsAppIcon from "./WhatsAppIcon";
 
 const Hero = () => {
-  const { getWhatsAppUrl } = useWhatsApp();
+  const handleScrollToPricing = () => {
+    const el = document.querySelector("#pricing");
+    el?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Premium Kesar mangoes with rich saffron pulp" width={1920} height={1080} className="w-full h-full object-cover" />
+        <img
+          src={heroImg}
+          alt="Premium Kesar mangoes with rich saffron pulp"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>
 
@@ -34,15 +42,12 @@ const Hero = () => {
         </span>
 
         <div>
-          <a
-            href={getWhatsAppUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-sans hover:brightness-110 transition-all shadow-lg shadow-primary/20"
+          <button
+            onClick={handleScrollToPricing}
+            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-sans hover:brightness-110 transition-all shadow-lg shadow-primary/20"
           >
-            <WhatsAppIcon className="w-5 h-5" />
-            Order on WhatsApp
-          </a>
+            Order Now
+          </button>
         </div>
       </div>
     </section>
