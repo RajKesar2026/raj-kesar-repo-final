@@ -9,6 +9,9 @@ const faqs = [
   { q: "What if mangoes are damaged during delivery?", a: "We pack each mango with care to prevent damage. In the rare case of damage during transit, share photos with us on WhatsApp within 24 hours and we'll arrange a replacement or refund." },
   { q: "Are your mangoes certified organic?", a: "Our mangoes are grown using 100% natural, chemical-free farming practices — no synthetic pesticides, no carbide, no artificial agents of any kind. We are first generation farmers who take immense pride in clean, honest farming. Every mango is a reflection of that commitment." },
   { q: "Why Gir Kesar and not regular Kesar mangoes?", a: "Gir, Gujarat is the ancestral home of the Kesar mango — known for its rich saffron colour, intense sweetness, and distinctive aroma. Our trees were sourced directly from Gir, ensuring you get the most authentic Kesar experience, not a generic variety grown elsewhere." },
+  { q: "How do I make payment?", a: "We accept UPI, Google Pay, PhonePe, and Cash on Delivery (available in select areas of Hyderabad). Payment details are shared with you directly on WhatsApp after you place your order." },
+  { q: "Do you deliver to my area in Hyderabad?", a: "We currently deliver across Hyderabad including Jubilee Hills, Banjara Hills, Madhapur, Gachibowli, Kondapur, Miyapur, Kukatpally, Secunderabad and surrounding areas. Not sure if we cover your area? Just WhatsApp us and we'll confirm instantly." },
+  { q: "Is there a minimum order quantity?", a: "Our smallest box is 2 kg — perfect for trying Kesar mangoes for the first time. There is no maximum limit. You can order multiple boxes of different sizes in the same order." },
 ];
 
 const FAQ = () => (
