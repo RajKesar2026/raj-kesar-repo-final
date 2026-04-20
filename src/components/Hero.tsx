@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Premium Kesar mangoes with rich saffron pulp"
+          alt="Fresh Gir Kesar mangoes farm to door delivery Hyderabad"
           width={1920}
           height={1080}
           className="w-full h-full object-cover"
