@@ -20,6 +20,21 @@ const FarmStory = () => (
           <p className="text-foreground font-medium">
             This isn't a business built on scale. It's a labour of love — and every box reflects that.
           </p>
+          <div className="flex flex-wrap gap-3 mt-6">
+            {[
+              { icon: "🌱", label: "First Generation Farmers" },
+              { icon: "🌳", label: "Gir Sourced Trees" },
+              { icon: "🤝", label: "Direct from Farm" },
+              { icon: "❤️", label: "Grown with Love" },
+            ].map((badge) => (
+              <span
+                key={badge.label}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-foreground text-xs font-sans font-semibold"
+              >
+                {badge.icon} {badge.label}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
