@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto mb-4 font-sans leading-relaxed">
-          Sun-ripened Kesar mangoes from Gir lineage, grown with care in Karnataka and delivered fresh to Hyderabad.
+          Authentic Kesar mango trees sourced from Gir, Gujarat — the ancestral home of Kesar — grown naturally in Karnataka's ideal climate and delivered fresh to your doorstep in Hyderabad.
         </p>
 
         <p className="text-foreground/70 text-sm font-sans mb-8">
