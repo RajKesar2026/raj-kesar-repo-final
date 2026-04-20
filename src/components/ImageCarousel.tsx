@@ -7,11 +7,11 @@ import carouselHarvest from "@/assets/carousel-harvest.jpg";
 import carouselPackaging from "@/assets/carousel-packaging.jpg";
 
 const slides = [
-  { src: carouselOrchard, alt: "Lush Kesar mango orchard bathed in golden sunlight", caption: "Our Orchard" },
-  { src: carouselMangoes, alt: "Ripe golden Kesar mangoes on the tree", caption: "Sun-Ripened Kesar" },
-  { src: carouselPulp, alt: "Rich saffron-colored Kesar mango pulp", caption: "The Golden Pulp" },
-  { src: carouselHarvest, alt: "Farm workers hand-picking mangoes", caption: "Harvest Day" },
-  { src: carouselPackaging, alt: "Premium mango box packaging", caption: "Ready for You" },
+  { src: carouselOrchard, alt: "Gir Kesar mango orchard Karnataka organic farm", caption: "Our Orchard" },
+  { src: carouselMangoes, alt: "Organic Kesar mangoes naturally ripened carbide free", caption: "Sun-Ripened Kesar" },
+  { src: carouselPulp, alt: "Golden Kesar mango pulp rich saffron flavour", caption: "The Golden Pulp" },
+  { src: carouselHarvest, alt: "Kesar mango harvest season Gir Gujarat farm", caption: "Harvest Day" },
+  { src: carouselPackaging, alt: "Farm fresh Kesar mango packaging free delivery Hyderabad", caption: "Ready for You" },
 ];
 
 const ImageCarousel = () => {
