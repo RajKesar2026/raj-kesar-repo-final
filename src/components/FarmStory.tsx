@@ -12,7 +12,7 @@ const FarmStory = () => (
 
         <div className="space-y-4 font-sans text-muted-foreground leading-relaxed">
           <p>
-            Raj Kesar Farms sits about 200 kilometres from Hyderabad, where Karnataka's red soil and warm climate create ideal conditions for growing premium mangoes. Years ago, we sourced our trees directly from Gir, Gujarat — the ancestral home of the Kesar mango.
+            Raj Kesar Farms sits about 200 kilometres from Hyderabad, in Karnataka's red soil belt — a climate so similar to Gir, Gujarat that it produces mangoes of equal richness and flavour. Our trees were sourced directly from Gir, Gujarat — the ancestral home of the Kesar mango — ensuring every fruit carries that authentic Gir lineage, grown naturally in Karnataka's ideal conditions.
           </p>
           <p>
             We follow clean, natural farming practices. No harmful chemicals, no artificial ripening agents. Every mango is allowed to mature on the tree, handpicked at the perfect moment, and packed with care within hours of harvest.
