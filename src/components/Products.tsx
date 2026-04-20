@@ -50,7 +50,10 @@ const Products = () => {
                 <span className="text-muted-foreground text-lg font-sans line-through mr-2">{p.oldPrice}</span>
                 <span className="font-serif text-4xl font-bold text-primary">{p.price}</span>
               </div>
-              <p className="text-muted-foreground text-xs font-sans mb-8">Inclusive of delivery</p>
+              <p className="text-muted-foreground text-xs font-sans mb-2">Inclusive of delivery</p>
+              <p className="text-xs font-sans font-semibold text-red-500 mb-8 animate-pulse">
+                🔥 Limited stock this season — selling fast!
+              </p>
 
               <a
                 href={getWhatsAppUrl(p.message)}
