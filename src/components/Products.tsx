@@ -83,6 +83,7 @@ const Products = () => {
                   COD <span className="text-primary font-semibold">*select areas</span>
                 </span>
               </div>
+
             </div>
           ))}
         </div>
