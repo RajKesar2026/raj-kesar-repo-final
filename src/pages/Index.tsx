@@ -25,6 +25,7 @@ const Index = () => (
     <div id="why-different"><WhyDifferent /></div>
     <div id="legacy"><GujaratOrigin /></div>
     <div id="taste"><TasteExperience /></div>
+    <SocialProof />
     <div id="pricing"><Products /></div>
     <div id="comparison"><ComparisonTable /></div>
     <MangoGuide />
@@ -32,7 +33,6 @@ const Index = () => (
     <div id="how-it-works"><HowItWorks /></div>
     <Delivery />
     <TrustReassurance />
-    <SocialProof />
     <div id="faq"><FAQ /></div>
     <FinalCTA />
     <footer className="py-8 text-center text-muted-foreground text-xs font-sans border-t border-border">
