@@ -5,7 +5,7 @@ const TasteExperience = () => (
   <Section className="py-20 md:py-28 px-6 bg-secondary/30">
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div className="rounded-2xl overflow-hidden">
-        <img src={mangoPulp} alt="Rich saffron-colored Kesar mango pulp" width={1280} height={720} loading="lazy" className="w-full h-80 md:h-[28rem] object-cover" />
+        <img src={mangoPulp} alt="Pure organic Kesar mango pulp naturally ripened" width={1280} height={720} loading="lazy" className="w-full h-80 md:h-[28rem] object-cover" />
       </div>
 
       <div>
