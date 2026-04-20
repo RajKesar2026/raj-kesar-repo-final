@@ -24,7 +24,7 @@ const FarmStory = () => (
       </div>
 
       <div className="order-1 md:order-2 rounded-2xl overflow-hidden">
-        <img src={farmImg} alt="Raj Kesar Farms orchard with lush green trees" width={1280} height={720} loading="lazy" className="w-full h-80 md:h-[28rem] object-cover" />
+        <img src={farmImg} alt="First generation Kesar mango farmers Gir Gujarat" width={1280} height={720} loading="lazy" className="w-full h-80 md:h-[28rem] object-cover" />
       </div>
     </div>
   </Section>
