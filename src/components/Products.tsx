@@ -4,10 +4,9 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { Package } from "lucide-react";
 
 const products = [
-  { weight: "2 kg", count: "6–8 mangoes", oldPrice: "₹600", price: "₹499", label: "Trial Pack", note: "Perfect for trying", message: "Hi, I want to order the 2kg Trial Pack of Kesar mangoes. Please share details." },
-  { weight: "5 kg", count: "15–20 mangoes", oldPrice: "₹1,500", price: "₹999", label: "Family Box", note: "Best value for families", featured: true, message: "Hi, I want to order the 5kg Most Popular Pack of Kesar mangoes. Please share details." },
-  { weight: "10 kg", count: "30–40 mangoes", oldPrice: "₹3,000", price: "₹1,799", label: "Grand Box", note: "Best for sharing", message: "Hi, I want to order the 10kg Grand Box of Kesar mangoes. Please share details." },
-];
+  { weight: "2 kg", count: "6–8 mangoes", oldPrice: "₹600", price: "₹499", perKg: "₹249/kg", label: "Trial Pack", note: "Perfect for trying", message: "Hi, I want to order the 2kg Trial Pack of Kesar mangoes. Please share details." },
+  { weight: "5 kg", count: "15–20 mangoes", oldPrice: "₹1,500", price: "₹999", perKg: "₹199/kg", label: "Family Box", note: "Best value for families", featured: true, message: "Hi, I want to order the 5kg Most Popular Pack of Kesar mangoes. Please share details." },
+  { weight: "10 kg", count: "30–40 mangoes", oldPrice: "₹3,000", price: "₹1,799", perKg: "₹179/kg", label: "Grand Box", note: "Best for sharing", message: "Hi, I want to order the 10kg Grand Box of Kesar mangoes. Please share details." },
 
 const Products = () => {
   const { getWhatsAppUrl } = useWhatsApp();
@@ -50,7 +49,8 @@ const Products = () => {
                 <span className="text-muted-foreground text-lg font-sans line-through mr-2">{p.oldPrice}</span>
                 <span className="font-serif text-4xl font-bold text-primary">{p.price}</span>
               </div>
-              <p className="text-muted-foreground text-xs font-sans mb-2">Inclusive of delivery</p>
+              <p className="text-muted-foreground text-xs font-sans mb-1">Inclusive of delivery</p>
+              <p className="text-primary text-xs font-sans font-semibold mb-8">That's just {p.perKg} 🥭</p>
               <p className="text-xs font-sans font-semibold text-red-500 mb-8 animate-pulse">
                 🔥 Limited stock this season — selling fast!
               </p>
