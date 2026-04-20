@@ -33,7 +33,7 @@ const GujaratOrigin = () => (
         </div>
       </div>
       <div className="rounded-2xl overflow-hidden">
-        <img src={gujaratOrigin} alt="Warm landscape evoking the Gir region of Gujarat" width={1280} height={720} loading="lazy" className="w-full h-80 md:h-[28rem] object-cover" />
+        <img src={gujaratOrigin} alt="Authentic Gir Gujarat origin Kesar mango trees" width={1280} height={720} loading="lazy" className="w-full h-80 md:h-[28rem] object-cover" />
       </div>
     </div>
   </Section>
