@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npx react-snap",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -70,7 +70,8 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "react-snap": "^1.23.0",
+    "@prerenderer/vite-plugin": "^0.1.1",
+    "@prerenderer/renderer-jsdom": "^0.1.1",
     "@eslint/js": "^9.32.0",
     "@playwright/test": "^1.57.0",
     "@tailwindcss/typography": "^0.5.16",
