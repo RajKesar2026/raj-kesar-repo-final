@@ -70,6 +70,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "vite-prerender-plugin": "^0.5.13",
     "@prerenderer/vite-plugin": "^0.1.1",
     "@prerenderer/renderer-jsdom": "^0.1.1",
     "@eslint/js": "^9.32.0",
