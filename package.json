@@ -2,12 +2,6 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "reactSnap": {
-  "source": "dist",
-  "minifyHtml": false,
-  "crawl": false,
-  "include": ["/"]
-},
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -71,8 +65,6 @@
   },
   "devDependencies": {
     "vite-prerender-plugin": "^0.5.13",
-    "@prerenderer/vite-plugin": "^0.1.1",
-    "@prerenderer/renderer-jsdom": "^0.1.1",
     "@eslint/js": "^9.32.0",
     "@playwright/test": "^1.57.0",
     "@tailwindcss/typography": "^0.5.16",
