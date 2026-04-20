@@ -20,6 +20,14 @@ const FarmStory = () => (
           <p className="text-foreground font-medium">
             This isn't a business built on scale. It's a labour of love — and every box reflects that.
           </p>
+          <div className="mt-6 border-l-4 border-primary pl-4">
+            <p className="text-foreground font-serif text-lg italic leading-relaxed">
+              "We started this farm because we believed Hyderabad deserved to taste a truly authentic Kesar mango — not what the market sells, but what we grow with our own hands."
+            </p>
+            <p className="text-primary font-sans font-semibold text-sm mt-2">
+              — Founder, Raj Kesar Farms
+            </p>
+          </div>
           <div className="flex flex-wrap gap-3 mt-6">
             {[
               { icon: "🌱", label: "First Generation Farmers" },
