@@ -41,6 +41,24 @@ const Hero = () => {
           Limited Harvest · Seasonal Availability
         </span>
 
+        {/* Trust Badges */}
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          {[
+            { icon: "🌿", label: "100% Organic" },
+            { icon: "✅", label: "Carbide-Free" },
+            { icon: "☀️", label: "Naturally Ripened" },
+            { icon: "📦", label: "Free Delivery" },
+            { icon: "🌳", label: "Gir Sourced" },
+          ].map((badge) => (
+            <span
+              key={badge.label}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/50 text-primary-foreground text-xs font-sans font-semibold"
+            >
+              {badge.icon} {badge.label}
+            </span>
+          ))}
+        </div>
+
         <div>
           <button
             onClick={handleScrollToPricing}
