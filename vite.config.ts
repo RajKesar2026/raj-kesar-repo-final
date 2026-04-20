@@ -2,8 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import VitePluginPrerender from "@prerenderer/vite-plugin";
-import { JSDOMRenderer } from "@prerenderer/renderer-jsdom";
+import { vitePrerenderPlugin } from "vite-prerender-plugin";
 
 export default defineConfig(({ mode }) => ({
   server: {
@@ -16,9 +15,9 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    mode === "production" && new VitePluginPrerender({
-      routes: ["/"],
-      renderer: new JSDOMRenderer(),
+    mode === "production" && vitePrerenderPlugin({
+      renderTarget: "#root",
+      prerenderScript: "/src/prerender.tsx",
     }),
   ].filter(Boolean),
   resolve: {
