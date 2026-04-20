@@ -56,7 +56,7 @@ const Products = () => {
                 🔥 Limited stock this season — selling fast!
               </p>
 
-              
+              <a
                 href={getWhatsAppUrl(p.message)}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -89,7 +89,7 @@ const Products = () => {
         </div>
 
         <div className="text-center mt-12">
-          
+         <a 
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
