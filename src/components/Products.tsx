@@ -7,7 +7,8 @@ const products = [
   { weight: "2 kg", count: "6–8 mangoes", oldPrice: "₹600", price: "₹499", perKg: "₹249/kg", label: "Trial Pack", note: "Perfect for trying", message: "Hi, I want to order the 2kg Trial Pack of Kesar mangoes. Please share details." },
   { weight: "5 kg", count: "15–20 mangoes", oldPrice: "₹1,500", price: "₹999", perKg: "₹199/kg", label: "Family Box", note: "Best value for families", featured: true, message: "Hi, I want to order the 5kg Most Popular Pack of Kesar mangoes. Please share details." },
   { weight: "10 kg", count: "30–40 mangoes", oldPrice: "₹3,000", price: "₹1,799", perKg: "₹179/kg", label: "Grand Box", note: "Best for sharing", message: "Hi, I want to order the 10kg Grand Box of Kesar mangoes. Please share details." },
-  ]
+];
+
 const Products = () => {
   const { getWhatsAppUrl } = useWhatsApp();
 
@@ -50,12 +51,12 @@ const Products = () => {
                 <span className="font-serif text-4xl font-bold text-primary">{p.price}</span>
               </div>
               <p className="text-muted-foreground text-xs font-sans mb-1">Inclusive of delivery</p>
-              <p className="text-primary text-sm font-sans font-semibold mb-8">{p.perKg} 🥭</p>
-              <p className="text-xs font-sans font-semibold text-red-500 mb-8 animate-pulse">
+              <p className="text-primary text-sm font-sans font-semibold mb-4">{p.perKg} 🥭</p>
+              <p className="text-xs font-sans font-semibold text-red-500 mb-6 animate-pulse">
                 🔥 Limited stock this season — selling fast!
               </p>
 
-              <a
+              
                 href={getWhatsAppUrl(p.message)}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,12 +69,26 @@ const Products = () => {
                 <WhatsAppIcon className="w-4 h-4" />
                 Order on WhatsApp
               </a>
+
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
+                {["UPI", "GPay", "PhonePe"].map((method) => (
+                  <span
+                    key={method}
+                    className="text-xs font-sans text-muted-foreground bg-background border border-border rounded-full px-3 py-1"
+                  >
+                    {method}
+                  </span>
+                ))}
+                <span className="text-xs font-sans text-muted-foreground bg-background border border-border rounded-full px-3 py-1">
+                  COD <span className="text-primary font-semibold">*select areas</span>
+                </span>
+              </div>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <a
+          
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
