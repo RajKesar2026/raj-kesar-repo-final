@@ -50,7 +50,7 @@ const Products = () => {
                 <span className="font-serif text-4xl font-bold text-primary">{p.price}</span>
               </div>
               <p className="text-muted-foreground text-xs font-sans mb-1">Inclusive of delivery</p>
-              <p className="text-primary text-xs font-sans font-semibold mb-8">That's just {p.perKg} 🥭</p>
+              <p className="text-primary text-sm font-sans font-semibold mb-8">{p.perKg} 🥭</p>
               <p className="text-xs font-sans font-semibold text-red-500 mb-8 animate-pulse">
                 🔥 Limited stock this season — selling fast!
               </p>
