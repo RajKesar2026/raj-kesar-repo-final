@@ -155,10 +155,8 @@ const Products = () => {
                   🔥 Limited stock this season — selling fast!
                 </p>
 
-                <a>
-                  href={getWhatsAppUrl(getWhatsAppMessage(p))}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => window.open(getWhatsAppUrl(getWhatsAppMessage(p)), '_blank')}
                   className={`inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-sm transition-all ${
                     p.featured
                       ? "bg-primary text-primary-foreground hover:brightness-110"
@@ -167,7 +165,7 @@ const Products = () => {
                 >
                   <WhatsAppIcon className="w-4 h-4" />
                   Order on WhatsApp
-                </a>
+                </button>
 
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {["UPI", "GPay", "PhonePe"].map((method) => (
@@ -188,15 +186,13 @@ const Products = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a>
-            href={getWhatsAppUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => window.open(getWhatsAppUrl(), '_blank')}
             className="inline-flex items-center gap-2 text-primary font-sans font-semibold hover:underline"
           >
             <WhatsAppIcon className="w-4 h-4" />
             Have questions? Chat with us on WhatsApp
-          </a>
+          </button>
         </div>
       </div>
     </Section>
