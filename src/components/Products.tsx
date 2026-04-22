@@ -81,7 +81,7 @@ const Products = () => {
                 value={couponInput}
                 onChange={(e) => { setCouponInput(e.target.value); setCouponError(""); }}
                 onKeyDown={(e) => e.key === "Enter" && handleApplyCoupon()}
-                placeholder="Enter code e.g. KEERTHI25"
+                placeholder="Enter code"
                 className="flex-1 border border-border rounded-full px-4 py-2 text-sm font-sans bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary"
               />
               <button
