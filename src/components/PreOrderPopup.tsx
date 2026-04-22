@@ -30,7 +30,7 @@ const PreOrderPopup = () => {
           </DialogTitle>
 
           <DialogDescription className="text-muted-foreground font-sans mt-3 leading-relaxed">
-            Harvest begins from 1st May. Limited stock available.
+            Our new batch of kesar mangoes is arriving soon. Limited stock available.
           </DialogDescription>
         </DialogHeader>
 
