@@ -15,7 +15,7 @@ import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import PreOrderPopup from "@/components/PreOrderPopup";
+//import PreOrderPopup from "@/components/PreOrderPopup";
 
 const Index = () => (
   <main className="bg-background min-h-screen">
@@ -39,7 +39,7 @@ const Index = () => (
       © {new Date().getFullYear()} Raj Kesar Farms. All rights reserved.
     </footer>
     <FloatingWhatsApp />
-    <PreOrderPopup />
+   {/* <PreOrderPopup /> */}
   </main>
 );
 
