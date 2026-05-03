@@ -5,7 +5,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { Package, Tag, CheckCircle, XCircle } from "lucide-react";
 
 const products = [
-  { weight: "2 kg", count: "6–8 mangoes", oldPrice: "₹600", price: 499, perKg: "₹249/kg", label: "Trial Pack", note: "Perfect for trying" },
+  { weight: "2 kg", count: "6–8 mangoes", oldPrice: "₹600", price: 499, perKg: "₹249/kg", label: "Trial Pack", note: "Perfect for trying", soldOut: true },
   { weight: "5 kg", count: "15–20 mangoes", oldPrice: "₹1,500", price: 999, perKg: "₹199/kg", label: "Family Box", note: "Best value for families", featured: true },
   { weight: "10 kg", count: "30–40 mangoes", oldPrice: "₹3,000", price: 1799, perKg: "₹179/kg", label: "Grand Box", note: "Best for sharing" },
 ];
@@ -167,6 +167,14 @@ const Products = () => {
                     Most Popular ⭐
                   </span>
                 )}
+                {p.soldOut && (
+                  <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
+                    <div className="absolute inset-0 bg-background/60 z-10" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-12 z-20 bg-red-500 text-white font-sans font-black text-2xl px-8 py-3 rounded-lg shadow-lg tracking-widest">
+                      SOLD OUT
+                    </div>
+                  </div>
+                )}
                 <p className="text-muted-foreground text-sm font-sans mb-2">{p.note}</p>
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-1">{p.label}</h3>
                 <p className="text-muted-foreground font-sans mb-1">{p.weight} ({p.count})</p>
@@ -192,15 +200,18 @@ const Products = () => {
                   🔥 Limited stock this season — selling fast!
                 </p>
                 <button
-                  onClick={() => handleOrderClick(p)}
+                  onClick={() => !p.soldOut && handleOrderClick(p)}
+                  disabled={p.soldOut}
                   className={`inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-sm transition-all ${
-                    p.featured
+                    p.soldOut
+                      ? "bg-muted text-muted-foreground cursor-not-allowed opacity-50"
+                      : p.featured
                       ? "bg-primary text-primary-foreground hover:brightness-110"
                       : "border border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   }`}
                 >
                   <WhatsAppIcon className="w-4 h-4" />
-                  Order on WhatsApp
+                  {p.soldOut ? "Sold Out" : "Order on WhatsApp"}
                 </button>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {["UPI", "GPay", "PhonePe"].map((method) => (
