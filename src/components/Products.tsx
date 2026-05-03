@@ -13,6 +13,7 @@ const products = [
 const COUPONS: Record<string, { discount: number; label: string }> = {
   KEERTHI25: { discount: 25, label: "Keerthi Homes — 25% off applied! 🎉" },
   REDDIT20:  { discount: 20, label: "Reddit Community — 20% off applied! 🎉" },
+  FB20:  { discount: 10, label: "Facebook Community — 10% off applied! 🎉" },
 };
 
 const formatPrice = (price: number) =>
