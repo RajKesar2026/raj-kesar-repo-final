@@ -6,8 +6,6 @@ const FloatingWhatsApp = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
-
-      {/* WhatsApp button — unchanged */}
       
         href={getWhatsAppUrl()}
         target="_blank"
@@ -17,18 +15,13 @@ const FloatingWhatsApp = () => {
       >
         <WhatsAppIcon className="w-6 h-6" />
       </a>
-
-      {/* Instagram button */}
       
         href="https://www.instagram.com/raj_kesar_2022/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Follow us on Instagram"
         className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-200"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 107%, #ffd600 0%, #ff0069 50%, #7638fa 100%)",
-        }}
+        style={{ background: "radial-gradient(circle at 30% 107%, #ffd600 0%, #ff0069 50%, #7638fa 100%)" }}
       >
         <svg
           viewBox="0 0 24 24"
@@ -44,7 +37,6 @@ const FloatingWhatsApp = () => {
           <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" strokeWidth="3" />
         </svg>
       </a>
-
     </div>
   );
 };
