@@ -6,7 +6,7 @@ import { Package, Tag, CheckCircle, XCircle } from "lucide-react";
 
 const products = [
   { weight: "2 kg", count: "6–8 mangoes", oldPrice: "₹600", price: 499, perKg: "₹249/kg", label: "Trial Pack", note: "Perfect for trying", soldOut: true },
-  { weight: "5 kg", count: "15–20 mangoes", oldPrice: "₹1,500", price: 999, perKg: "₹199/kg", label: "Family Box", note: "Best value for families", featured: true, soldOut: false },
+  { weight: "5 kg", count: "15–20 mangoes", oldPrice: "₹1,500", price: 999, perKg: "₹199/kg", label: "Family Box", note: "Best value for families", featured: true, soldOut: true },
   { weight: "10 kg", count: "30–40 mangoes", oldPrice: "₹3,000", price: 1799, perKg: "₹179/kg", label: "Grand Box", note: "Best for sharing", soldOut: true },
 ];
 
